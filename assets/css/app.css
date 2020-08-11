@@ -1,0 +1,107 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #23363E;
+  color: #fff;
+}
+
+a {
+  color: #23363E;
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+  color: #1b2631;
+}
+
+.header .container {
+  padding-bottom: 105px;
+}
+
+.bg {
+  background-image: url(/assets/img/profile-banner.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .25;
+  overflow: hidden;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.info-bar {
+  margin-top: -42px;
+  color: #1b2631;
+}
+
+.info-bar .titles {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.flag {
+  width: 33px;
+}
+
+/* past-streams */
+.streams {
+  margin-top: 68px;
+}
+
+.past-streams .single-stream {
+  margin-bottom: 30px;
+}
+
+.past-streams .single-stream img {
+  display: block;
+  width: 100%;
+  will-change: transform;
+  -webkit-transition: -webkit-transform .5s cubic-bezier(.12,.07,0,.99);
+  -o-transition: transform .5s cubic-bezier(.12,.07,0,.99);
+  transition: transform .5s cubic-bezier(.12,.07,0,.99);
+  transition: transform .5s cubic-bezier(.12,.07,0,.99),-webkit-transform .5s cubic-bezier(.12,.07,0,.99);
+}
+
+.past-streams .single-stream:hover img {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.video-thumbnail {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-thumbnail:before {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  content: "\f144";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 74px;
+  color: #fff;
+  opacity: .8;
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.video-thumbnail:hover:before {
+  color: #eee;
+}
+
+
+/* footer */
+.bd-footer {
+  background-color: #38799E;
+  color: #23363E;
+}
+
