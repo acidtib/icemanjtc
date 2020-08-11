@@ -1,7 +1,7 @@
 (function() {
 
   const apiInstance = axios.create({
-    baseURL: 'http://localhost:3000'
+    baseURL: 'https://iceapi.nonce.casa'
   });
 
   apiInstance.get('/stream')
